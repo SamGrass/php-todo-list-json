@@ -1,0 +1,22 @@
+[
+    {
+        "name" : "spesa",
+        "status" : false ,
+        "info" :""
+    },
+    {
+        "name" : "passeggiata",
+        "status" : false,
+        "info" :""
+    },
+    {
+        "name" : "palestra",
+        "status" : false,
+        "info" :""
+    },
+    {
+        "name" : "cena",
+        "status" : false,
+        "info" :""
+    }
+]
