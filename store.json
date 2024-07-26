@@ -2,7 +2,7 @@
     {
         "name" : "spesa",
         "status" : false ,
-        "info" :""
+        "info" :"comprare latte, uova, farina, zucchero"
     },
     {
         "name" : "passeggiata",
