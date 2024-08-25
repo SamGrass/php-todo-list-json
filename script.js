@@ -5,7 +5,9 @@ const { createApp } = Vue
       return {
         apiUrl: 'server.php',
         ToDoList: [],
-        message: 'ciao'
+        NewTask: '',
+        TaskDsc: '',
+        TaskStatus: false,
       }
     },
     methods: {
@@ -14,6 +16,21 @@ const { createApp } = Vue
         .then( res => {
             this.ToDoList = res.data;
         })
+      },
+      AddTask(){
+        const data = {
+            name: this.NewTask,
+            status: this.TaskStatus,
+            info: this.TaskDsc
+        }
+        axios.post(this.apiUrl, data, {
+            headers: {'Content-Type': 'multipart/form-data'}
+        })
+            .then(res => 
+                this.ToDoList = res.data,
+                this.NewTask = '',
+                this.TaskDsc = '',
+            )
       }
     },
     mounted() {

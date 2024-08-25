@@ -26,6 +26,7 @@
                     </ul>
                     <div class="add-task">
                         <input @keyup.enter="AddTask" v-model="NewTask" class="font-input" type="text" placeholder="Add Task">
+                        <input v-model="TaskDsc" class="font-input" type="text" placeholder="Add Description">
                         <button @click="AddTask" class="font-input" type="submit">Add</button>
                     </div>
 
