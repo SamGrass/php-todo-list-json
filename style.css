@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(29, 36, 50);
+    color: white;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+
+
+/* To do list */
+.container {
+    max-width: 1100px;
+    margin: 4rem auto;
+}
+.card {
+    border-radius: 0.5em;
+    background-color: white;
+    color: black;
+    padding: 1em;
+}
+ul {
+    list-style: none;
+    border: 1px solid rgba(128, 128, 128, 0.299);
+    border-radius: 0.5em;
+}
+.item-card {
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.299);
+    font-size: 1.1rem;
+}
+.item-card:last-child {
+    border-bottom: none;
+}
+
+/* form */
+
+.add-task {
+    width: 70%;
+    margin: 1rem auto 0;
+    width: fit-content;
+}
+
+.font-input {
+    font-size: 1.2rem;
+}
+
+
