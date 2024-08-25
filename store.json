@@ -7,16 +7,16 @@
     {
         "name" : "passeggiata",
         "status" : false,
-        "info" :""
+        "info" :null
     },
     {
         "name" : "palestra",
         "status" : false,
-        "info" :""
+        "info" :null
     },
     {
         "name" : "cena",
         "status" : false,
-        "info" :""
+        "info" :null
     }
 ]
