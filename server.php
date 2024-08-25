@@ -13,6 +13,12 @@ if (isset($_POST['name'])) {
     file_put_contents('store.json', json_encode($toDo_List));
 }
 
+if (isset($_POST['taskDel'])) {
+    $index = $_POST['taskDel'];
+    array_splice($toDo_List, $index, 1);
+    file_put_contents('store.json', json_encode($toDo_List));
+}
+
 // fine logica
 
 // trasformo il file da PHP a JSON

@@ -31,6 +31,17 @@ const { createApp } = Vue
                 this.NewTask = '',
                 this.TaskDsc = '',
             )
+      },
+      RemoveTask(index) {
+        const data = {
+            taskDel: index
+        }
+        axios.post(this.apiUrl, data, {
+            headers: {'Content-Type': 'multipart/form-data'}
+        })
+            .then(res => 
+                this.ToDoList = res.data,
+            )
       }
     },
     mounted() {

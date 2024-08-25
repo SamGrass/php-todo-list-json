@@ -40,6 +40,9 @@ ul {
 .item-card:last-child {
     border-bottom: none;
 }
+.fa-trash {
+    float: inline-end;
+}
 
 /* form */
 
